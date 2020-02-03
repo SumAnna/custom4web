@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custom4Web</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+		<link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap.min.css">
+		
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div class=" mt-4 p-0 container-flex" id="container">
+			<div class="row justify-content-center">
+				<div class="col-3 col-sm-3 col-md-2 col-lg-1">
+					<select id="selectBox" class="browser-default custom-select">
+						<option value="20">20</option>
+						<option value="50">50</option>
+						<option value="70">70</option>
+						<option value="All">All</option>
+					</select>
+				</div>
+				<div class="col-6 col-sm-6 col-md-5 col-lg-4">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Search" id="textarea" onkeyup="textPrint();">
+						<div class="input-group-append">
+							<span class="input-group-text" id="basic-addon"><i class="fas fa-search"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+							<table class="table table-xs-responsive table-hover table-dark table-striped" id="table">
+								<thead>
+									<tr>
+										<th id="item-id" scope="col">Id<i class="none"></i></th>
+										<th id="item-title" scope="col">Title<i class="none"></i></th>
+										<th id="item-price" scope="col">Color<i class="none"></i></th>
+										<th id="item-color" scope="col">Price<i class="none"></i></th>
+										<th id="item-department" scope="col">Department<i class="none"></i></th>
+									</tr>
+								</thead>
+								<tbody id="tbody"></tbody>
+							</table>
+						
+
+				<div id="pagination-container">
+					<ul class="pagination" id="pagination"></ul>
+				</div>
+
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
